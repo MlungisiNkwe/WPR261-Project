@@ -1,5 +1,5 @@
 # WPR261-Project
-#Institution Belgium Campus ITversity
+# Institution Belgium Campus ITversity
 # The Unusual Foods Around us
 This project is a intercative web application showing the unusual foods found in South Africa and neigbouring countries.
 It was built using HTML,CSS and Javascript
