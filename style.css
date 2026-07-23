@@ -1,15 +1,14 @@
-
 /* ===== ROOT COLOURS (African palette) ===== */
 :root {
-  --burnt-orange:  #C8511B;
-  --deep-red:      #8B1A1A;
-  --golden-yellow: #E8A020;
-  --earth-brown:   #5C3317;
-  --warm-sand:     #F2E0C8;
-  --dark-mud:      #2C1A0E;
-  --leaf-green:    #4A7C3F;
-  --cream:         #FAF3E0;
-  --kente-stripe:  #D4A017;
+  --burnt-orange: #c8511b;
+  --deep-red: #8b1a1a;
+  --golden-yellow: #e8a020;
+  --earth-brown: #5c3317;
+  --warm-sand: #f2e0c8;
+  --dark-mud: #2c1a0e;
+  --leaf-green: #4a7c3f;
+  --cream: #faf3e0;
+  --kente-stripe: #d4a017;
 }
 
 /* ===== BASE ===== */
@@ -18,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   background-color: var(--cream);
   color: var(--dark-mud);
   line-height: 1.7;
@@ -31,35 +30,39 @@ body::before {
   height: 8px;
   background: repeating-linear-gradient(
     90deg,
-    var(--burnt-orange)   0px,
-    var(--burnt-orange)   20px,
-    var(--golden-yellow)  20px,
-    var(--golden-yellow)  40px,
-    var(--deep-red)       40px,
-    var(--deep-red)       60px,
-    var(--leaf-green)     60px,
-    var(--leaf-green)     80px,
-    var(--earth-brown)    80px,
-    var(--earth-brown)    100px
+    var(--burnt-orange) 0px,
+    var(--burnt-orange) 20px,
+    var(--golden-yellow) 20px,
+    var(--golden-yellow) 40px,
+    var(--deep-red) 40px,
+    var(--deep-red) 60px,
+    var(--leaf-green) 60px,
+    var(--leaf-green) 80px,
+    var(--earth-brown) 80px,
+    var(--earth-brown) 100px
   );
 }
 
 /* ===== HEADER ===== */
+
 header {
   background-color: var(--dark-mud);
   color: var(--warm-sand);
-  padding: 30px 40px 20px;
+  padding: 2px 40px 20px;
   border-bottom: 4px solid var(--golden-yellow);
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 2.4rem;
   color: var(--golden-yellow);
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 header p {
@@ -74,20 +77,23 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 14px;
+  justify-content: center;
 }
 
 nav a {
   text-decoration: none;
   color: var(--dark-mud);
   background-color: var(--golden-yellow);
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   padding: 8px 18px;
   border-radius: 4px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition:
+  background 0.3s ease,
+  color 0.3s ease;
   border: 2px solid transparent;
 }
 
@@ -106,7 +112,7 @@ main {
 
 /* ===== SECTION HEADINGS ===== */
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.9rem;
   color: var(--burnt-orange);
   text-transform: uppercase;
@@ -118,7 +124,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   color: var(--earth-brown);
   margin: 15px 0 8px;
@@ -138,7 +144,8 @@ section {
   padding: 30px 35px;
   margin-bottom: 35px;
   box-shadow: 0 3px 12px rgba(44, 26, 14, 0.1);
-  overflow: hidden;   
+  overflow: hidden;
+  scroll-margin-top: 120px; /* For smooth scrolling to sections */
 }
 
 /* ===== HR DIVIDERS ===== */
@@ -147,9 +154,12 @@ hr {
   height: 4px;
   background: repeating-linear-gradient(
     90deg,
-    var(--burnt-orange) 0px, var(--burnt-orange) 15px,
-    var(--golden-yellow) 15px, var(--golden-yellow) 30px,
-    var(--earth-brown) 30px, var(--earth-brown) 45px
+    var(--burnt-orange) 0px,
+    var(--burnt-orange) 15px,
+    var(--golden-yellow) 15px,
+    var(--golden-yellow) 30px,
+    var(--earth-brown) 30px,
+    var(--earth-brown) 45px
   );
   margin: 10px 0 30px;
   border-radius: 2px;
@@ -174,7 +184,7 @@ hr {
   border: 2px solid var(--burnt-orange);
   border-radius: 6px;
   font-size: 1rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: var(--warm-sand);
   color: var(--dark-mud);
   outline: none;
@@ -191,7 +201,7 @@ hr {
   color: var(--cream);
   border: none;
   border-radius: 6px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -218,7 +228,9 @@ hr {
   border-radius: 8px;
   padding: 15px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .results-block:hover {
@@ -236,7 +248,7 @@ hr {
 }
 
 .result-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: var(--earth-brown);
   font-size: 1.1rem;
   margin-bottom: 6px;
@@ -245,6 +257,7 @@ hr {
 /* ===== FOOD CARDS ===== */
 .card {
   display: inline-block;
+  flex-direction: column;
   background-color: var(--warm-sand);
   border: 2px solid var(--burnt-orange);
   border-radius: 10px;
@@ -253,7 +266,9 @@ hr {
   text-align: center;
   width: 180px;
   vertical-align: top;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .card:hover {
@@ -282,16 +297,26 @@ hr {
   border: none;
   border-radius: 5px;
   padding: 8px 14px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 0.85rem;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
+  margin-top: auto;
 }
 
 .card button:hover {
   background-color: var(--deep-red);
+}
+
+/* ===== ACCESSIBILITY ===== */
+nav a:focus,
+#search-button:focus,
+.card button:focus,
+#search-input:focus {
+  outline: 3px solid var(--golden-yellow);
+  outline-offset: 2px;
 }
 
 /* ===== TABLE ===== */
@@ -308,7 +333,7 @@ table {
 table th {
   background-color: var(--earth-brown);
   color: var(--golden-yellow);
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -331,12 +356,14 @@ table tr:hover td {
 }
 
 /* ===== LISTS ===== */
-ul, ol {
-  padding-left: 22px;
+ul,
+ol {
+  padding-left: 35px;/* Increased padding from 22px */
   margin-bottom: 12px;
 }
 
-ul li, ol li {
+ul li,
+ol li {
   margin-bottom: 6px;
   color: var(--dark-mud);
 }
@@ -356,8 +383,8 @@ section img {
   border: 3px solid var(--burnt-orange);
   margin: 15px 0 20px;
   box-shadow: 0 4px 14px rgba(44, 26, 14, 0.2);
-   float: right;                              /* NEW: sit beside the text */
-  margin: 0 0 20px 30px;   
+  float: right; /* NEW: sit beside the text */
+  margin: 0 0 20px 30px;
 }
 
 /* ===== FOOTER ===== */
@@ -395,32 +422,59 @@ footer ul li::before {
 
 /* ===== TABLET (max-width: 768px) ===== */
 @media (max-width: 768px) {
-  header { padding: 20px; }
-  header h1 { font-size: 1.7rem; }
+  header {
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 1.7rem;
+  }
 
-  nav { gap: 8px; }
-  nav a { font-size: 0.8rem; padding: 7px 12px; }
+  nav {
+    gap: 8px;
+  }
+  nav a {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
 
-  section { padding: 20px; }
+  section {
+    padding: 20px;
+  }
 
   .card {
     width: calc(50% - 28px);
     margin: 8px;
   }
 
-  table { font-size: 0.85rem; }
-  table th, table td { padding: 10px 12px; }
+  table {
+    font-size: 0.85rem;
+  }
+  table th,
+  table td {
+    padding: 10px 12px;
+  }
 }
 
-/* ===== MOBILE (max-width: 480px) ===== */
-@media (max-width: 480px) {
-  header h1 { font-size: 1.4rem; }
+/* ===== MOBILE (max-width: 780px) ===== */
+@media (max-width: 780px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
 
-  nav { flex-direction: column; }
-  nav a { text-align: center; }
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    text-align: center;
+  }
 
-  #search-form { flex-direction: column; }
-  #search-input, #search-button { width: 100%; }
+  #search-form {
+    flex-direction: column;
+  }
+  #search-input,
+  #search-button {
+    width: 100%;
+  }
 
   .card {
     width: 100%;
@@ -431,8 +485,8 @@ footer ul li::before {
   section img {
     width: 100%;
     height: auto;
-     margin: 15px 0 20px;
-      float: none;       /* NEW: stack vertically on small screens */
+    margin: 15px 0 20px;
+    float: none; /* NEW: stack vertically on small screens */
   }
 
   table {

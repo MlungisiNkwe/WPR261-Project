@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Unusual things around us</title>
+    <title>The Unusual foods around us</title>
     <link rel="stylesheet" href="style.css">
+    <script src="home.js" defer></script>
   </head>
   <body>
     <!--Comment using this, not //-->
@@ -13,18 +14,18 @@
     the same page intead of seperate html pages-->
 
     <header>
-      <h1>The Unusual Things Around Us</h1>
+      <h1>The Unusual Foods Around Us</h1>
       <nav>
         <a href="#search-section">Search</a>
         <a href="#results-section">Results</a>
-        <a href="#details-section">Details</a>
         <a href="#favourites-section">Favourites</a>
+        <a href="#details-section">Details</a>
         <a href="#compare-section">Compare</a>
         <a href="about.html">About</a>
       </nav>
     </header>
     <main>
-      <!--//search section, with place holders for milstone 1 //Javascript will be
+      <!--search section, with place holders for milstone 1 Javascript will be
       added in milstone 2-->
       <section id="search-section">
         <h2>Search</h2>
@@ -32,7 +33,7 @@
           <input
             type="search"
             id="search-input"
-            placeholder="Search for a landmark...."
+            placeholder="Search for a meal...."
           />
           <button type="submit" id="search-button">Search</button>
         </form>
@@ -48,43 +49,26 @@
         <h2>Results</h2>
         <div class="results-container">
           <article class="results-block">
-            <img src="placeholder.jpg" alt="landmark image" />
-            <h3 class="result-title">Landmark Name</h3>
-            <p class="short description">Short description</p>
+            <img src="Images/mopaneworms.jpg" alt="Mopaneworms" />
+            <h3 class="result-title">Mopaneworms</h3>
+            <p class="shortdescription">This meal....</p>
           </article>
         </div>
       </section>
 
      
-      <!--person 2 start here-->
-      <header>
+  
+      
 
-<h1>Favourite Foods</h1>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="details.html">Details</a>
-
-<a href="comparison.html">Comparison</a>
-
-<a href="favourites.html">Favourites</a>
-
-<a href="about.html">About</a>
-
-</nav>
-
-</header>
-
-<section>
+<section id ="favourites-section">
 
 <h2>Your Favourite Foods</h2>
 
 <p>
 Click the button to save your favourite foods.
-(JavaScript will be added later.)
 </p>
+<!--(JavaScript will be added later.)-->
+
 
 <div class="card">
 
@@ -138,7 +122,7 @@ Click the button to save your favourite foods.
 
 <div class="card">
   <img src="Images/cowsheel.jpg" alt="cowsheel">
-  <h3>cowsheel</h3>
+  <h3>Cows Heel</h3>
 
   <button>Add to Favourites</button>
 
@@ -158,7 +142,7 @@ Click the button to save your favourite foods.
 
 <div class = "card">
   <img src="Images/sheepshead.jpg" alt="sheepshead">
-  <h3>sheepshead</h3>
+  <h3>Sheeps Head</h3>
   <button>Add to Favourites</button>
 
 
@@ -174,7 +158,8 @@ Click the button to save your favourite foods.
 
 </header>
 
-<table>
+<section id ="compare-section">
+  <table>
 
 <tr>
 
@@ -214,7 +199,7 @@ Click the button to save your favourite foods.
 
 <tr>
 
-<td>sheepshead</td>
+<td>Sheeps Head</td>
 
 <td>High</td>
 
@@ -250,11 +235,11 @@ Click the button to save your favourite foods.
 
 <tr>
 
-  <td> Cowsheel</td>
+  <td> Cows Heel</td>
 
   <td>High</td>
 
-  <td> Very high</td>
+  <td>Very high</td>
 
   <td>Cooked</td>
 
@@ -264,7 +249,7 @@ Click the button to save your favourite foods.
 
 <tr>
 
-  <td>flyingants</td>
+  <td>Flying Ants</td>
 
   <td>low</td>
 
@@ -297,72 +282,20 @@ Click the button to save your favourite foods.
   <td>Fried</td>
 </tr>
 </table>
-
-</header>
-
-<section>
-
-<h2>Project Purpose</h2>
-
-<p>
-
-This website was created as part of the WPR261 Web Programming project.
-
-Our aim is to introduce users to unusual foods that are enjoyed in different cultures, especially in South Africa. Visitors can learn about each food, compare nutritional information and discover interesting facts.
-
-</p>
-
-<h2>Our Theme</h2>
-
-<p>
-
-The theme of our project is <strong>Unusual Foods</strong>. We selected this theme because food reflects culture and tradition, and many people are interested in discovering unique dishes from around the world.
-
-</p>
-
-<h2>Group Members</h2>
-
-<ul>
-
-<li>Kasper</li>
-
-<li>Abonga</li>
-
-<li>Mlungisi</li>
-
-<li>Kgothatso</li>
-
-<li>Nkanyiso</li>
-</ul>
-
 </section>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-      
-
-      <hr>
-      <section>
+<section id ="details-section">
         <h2> 1. Mopane Worms</h2>
         <img src="Images/mopaneworms.jpg" alt="mopaneworms" width="350">
 
         <h3>Description</h3>
         <p>
-          Mopane worms are dried up caterpillars found mainly in South Africa, prodominantley in Limpopo
+          Mopane worms are dried up caterpillars found mainly in South Africa, primarily in Limpopo
           they are harvested from Mopane trees and are usually dried, fried or cooked as a gravy. They are 
-          high in protein and are popular traditional food.
+          high in protein and is popular traditional food.
         </p>
 
         <h3>Interesting Facts</h3>
@@ -388,9 +321,9 @@ The theme of our project is <strong>Unusual Foods</strong>. We selected this the
         <h3>Interesting Facts</h3>
         <ul>
           <li>Very popular in South African Townships</li>
-          <li>Rich in collagan</li>
+          <li>Rich in collagen</li>
           <li>Usually sold by street vendors</li>
-          <li>Can be grilled or boiled</li>
+          <li>Can be braaied, boiled or grilled</li>
         </ul>
       </section>
 
@@ -399,9 +332,9 @@ The theme of our project is <strong>Unusual Foods</strong>. We selected this the
         <h2>3. Crocodile Meat</h2>
 
         <img src="Images/crocodile.jpg" alt="crocodile meat" width="350">
-        <h3>Descriptions</h3>
+        <h3>Description</h3>
         <p>
-          Crocodile Meat is a lean white meat that is served in some resturants and game reserves. it
+          Crocodile Meat is a lean white meat that is served in some restaurants and game reserves. it
           has a mild flavour and many people compare its taste to a mixture of chicken and fish. It is 
           high in protein but low in fat.
 
@@ -411,7 +344,7 @@ The theme of our project is <strong>Unusual Foods</strong>. We selected this the
           <li>Low in Fat</li>
           <li>High in protein</li>
           <li>Often compared to chicken or fish</li>
-          <li>Served in some South Afrucan Resturants </li>
+          <li>Served in some South African Restaurants </li>
         </ul>
 
       </section>
@@ -419,21 +352,21 @@ The theme of our project is <strong>Unusual Foods</strong>. We selected this the
       <hr>
       <section>
 
-        <h2>4.Ostrich Meat</h2>
+        <h2>4. Ostrich Meat</h2>
         <img src = "Images/ostrich.jpg" alt = "ostrich meat" width="350">
 
         <h3>Description</h3>
         <p>
           Ostrich meat is a healthy alternative to beef because it contains less fat while still
-          being rich in protein and iron. It is commonly prepared as steaks, burgers amd sausages and is 
-          enjoyed by many people in South Africa
+          being rich in protein and iron. It is commonly prepared as steaks, burgers and sausages and is 
+          enjoyed by many people in South Africa.
         </p>
 
         <h3>Interesting Facts</h3>
         <ul>
-          <li>Low in Fat.</li>
+          <li>Low in fat.</li>
           <li>High in protein and iron.</li>
-          <li>South Africa is one of the Worlds leading ostrich meat producers</li>
+          <li>South Africa is one of the world's leading ostrich meat producers</li>
           <li>Used to make steaks, burgers and sausages</li>
         </ul>
       </section>
@@ -442,21 +375,21 @@ The theme of our project is <strong>Unusual Foods</strong>. We selected this the
 
       <section>
 
-        <h2>5.Termites</h2>
+        <h2>5. Termites</h2>
         <img src="Images/termites.jpg" alt="termites " width="350">
 
         <h3> Description</h3>
         <p>
-          Termites are eaten in many african countries including South Africa, Zimbabwe, Botswana, and Zambia. They are usually collected during the rainy season and are 
+          Termites are eaten in many African countries including South Africa, Zimbabwe, Botswana, and Zambia. They are usually collected during the rainy season and are 
           roasted, fried or dried before being eaten. They are highly nutritious and are an important source of protein in many rural communities
         </p>
 
         <h3>Interesting Facts</h3>
         <ul>
-          <li>Rich in protein, healthy fats and minerala</li>
+          <li>Rich in protein, healthy fats and minerals</li>
           <li>Usually collected after rainfall</li>
           <li>Can be eaten as a snack</li>
-          <li>Considered a delicacy in African acaountries</li>
+          <li>Considered a delicacy in African countries</li>
         </ul>
 
 
@@ -467,19 +400,19 @@ The theme of our project is <strong>Unusual Foods</strong>. We selected this the
       <hr>
       <section>
 
-        <h2>6.Flying Ants</h2>
+        <h2>6. Flying Ants</h2>
         <img src="Images/flyingants.jpg" alt="flyingants" width ="350">
 
         <h3>Description</h3>
         <p>
           Flying Ants are a seasonal delicacy in several African countries. They are collected after summer rainfall, and the wings are removed before they are roasted
-          or fried. Many people enjoy them as a crunchy
+          or fried. Many people enjoy them as a crunchy snack or as a protein rich meals.
         </p>
 
         <h3>Interesting Facts</h3>
         <ul>
-          <li>Available only during ceratin times of the year</li>
-          <li>High Protein</li>
+          <li>Available only during certain times of the year</li>
+          <li>High in protein</li>
           <li>Often collected by families after heavy rains</li>
           <li>Popular in South Africa, Botswana and Zambia</li>
         </ul>
@@ -487,18 +420,18 @@ The theme of our project is <strong>Unusual Foods</strong>. We selected this the
 
       <hr>
       <section>
-        <h2>7.Cow Heel(Trotters)</h2>
+        <h2>7. Cow Heel (Trotters)</h2>
         <img src="Images/cowsheel.jpg" alt="cowsheel" width="350">
 
         <h3>Description</h3>
         <p>
-          Cow heel, also known as trotters, is made from the feet of a cow. It is slow-cooked until tender and is commonly served with pap, rice, or dumplings. Popular
-          in many South African Households and is known for its rich flavour and has a squishy texture
+          Cow heel, also known as trotters, is made from the feet of a cow. It is slowly cooked until tender and is commonly served with pap, rice, or dumplings. Popular
+          in many South African households and is known for its rich flavour and squishy texture.
         </p>
 
         <h3>Interesting Facts</h3>
         <ul>
-          <li>Rich in colllagen </li>
+          <li>Rich in collagen </li>
           <li>Slow-cooked for several hours</li>
           <li>Commonly eaten at family gatherings</li>
           <li>Popular in South Africa, Botswana, Lesotho and Zimbabwe</li>
@@ -508,43 +441,104 @@ The theme of our project is <strong>Unusual Foods</strong>. We selected this the
 
       <hr>
       <section>
-        <h2>8.Tripe (Mala Mogodu)</h2>
+        <h2>8. Tripe (Mala Mogodu)</h2>
         <img src="Images/tripe.jpg" alt="tripe" width = "350">
 
         <h3>Description</h3>
         <p>
-          Its made from Stomach lining of Cows or sheeps. It is thoroughly cleaned ans slow-cooked with vegetables and spices. It is a traditional dish that is enjoyed across
-          many Southern African cultures
+          Tripe, otherwise known as Mogodu, is made from stomach lining of cows or sheep. Mogodo is thoroughly cleaned and slowly cooked with vegetables and spices. It is a traditional dish that is enjoyed by many
+          Southern African cultures.
         </p>
 
         <h3>Interesting Facts</h3>
         <ul>
           <li>Popular traditional South African meal</li>
           <li>Usually served with pap or steamed bread</li>
-          <li>Rich in Protein</li>
-          <li> Preapred differently by various cultural groups</li>
+          <li>Rich in protein</li>
+          <li> Prepared differently by various cultural groups</li>
         </ul>
       </section>
+
+      <hr>
+
+      <section>
+        <h2>9. Sheepshead</h2>
+        <img src="Images/sheepshead.jpg" alt="sheepshead" width = "350">
+
+        <h3>Description</h3>
+        <p>
+           Sheep's head, known locally as a "smiley," is a traditional South African delicacy.
+          It is slow-cooked or steamed until tender and is commonly sold by street vendors or
+          served at social gatherings. The dish is valued for its rich flavour and cultural
+          significance in many communities.
+        </p>
+
+        <h3>Interesting Facts</h3>
+        <ul>
+          <li>Known locally as a "smiley"</li>
+          <li>Slow-cooked or steamed until tender</li>
+          <li>Commonly sold by street vendors and at social gatherings</li>
+          <li> Various falvour profiles, depending on where in the country it is prepared.</li>
+        </ul>
+      </section>
+
       <hr>
 
       <section>
         <h2>Original Research Evidence</h2>
         <ol>
-       <li>photograph of Mopane worms being served at a local Resturant </li>
-       <li> photograph of braaied Chickenfeet being served</li>
-       <li>Photograph  of Crocodile meat being served at a street super market in town</li>
-       <li>Photograph of raw ostrich meet being prepared to be cooked</li>
-       <li>Photograph of Termites after being caught and being prepared for marination</li>
-       <li>Photograph of flyingants being serverd as a fried delicacy</li>
-       <li>Photograph of cowsheel being serverd as a home-made meal</li>
+       <li>Photograph of mopane worms being served at a local restaurant </li>
+       <li>Photograph of braaied chicken feet being served</li>
+       <li>Photograph of crocodile meat being served at a street super market in town</li>
+       <li>Photograph of raw ostrich meat being prepared to be cooked</li>
+       <li>Photograph of termites after being caught and being prepared for marination</li>
+       <li>Photograph of flying ants being served as a fried delicacy</li>
+       <li>Photograph of cows heel being served as a home-made meal</li>
        <li>Photograph of tripe being served as a home-made meal</li>
-       <li>Photograph of a sheeps head</li>
+       <li>Photograph of a sheep's head</li>
 
 
         </ol>
 
-      </section> 
+      </section>
 
+<section>
+
+<h2>Project Purpose</h2>
+
+<p>
+
+This website was created as part of the WPR261 Web Programming project.
+
+Our aim is to introduce users to unusual foods that are enjoyed in different cultures, especially in South Africa. Visitors can learn about each food, compare nutritional information and discover interesting facts.
+
+</p>
+
+<h2>Our Theme</h2>
+
+<p>
+
+The theme of our project is <strong>Unusual Foods</strong>. We selected this theme because food reflects culture and tradition, and many people are interested in discovering unique dishes from South Africa.
+
+</p>
+
+<h2>Group Members</h2>
+
+<ul>
+
+<li>Othniel Kasper</li>
+
+<li>Kgothatso Modiso</li>
+
+<li>Abonga Jaho</li>
+
+<li>Mlungisi Nkwe</li>
+
+<li>Nkanyiso Thabethe</li>
+
+</ul>
+
+</section>
       <hr>
       <footer>
         <h2>References</h2>
@@ -553,7 +547,7 @@ The theme of our project is <strong>Unusual Foods</strong>. We selected this the
 <li>National Geographic Food Articles</li>
 <li>Food and Agriculture Organization (FAO)</li>
 <li>BBC Good Food</li>
-<li>Taken photograpgs locally</li>
+<li>Photographs taken locally</li>
 <li>Self Taken pictures</li>
 
           
